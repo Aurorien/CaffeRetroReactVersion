@@ -1,7 +1,5 @@
-import type { UUID } from "crypto";
-
 export interface MenuItem {
-  id: UUID;
+  id: string;
   name: string;
   value: string;
 }
