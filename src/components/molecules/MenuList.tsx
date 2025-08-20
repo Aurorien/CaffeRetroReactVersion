@@ -1,7 +1,7 @@
-import type { MenuItem } from "../../shared/types";
+import type { IMenuItem } from "../../shared/types";
 
 interface MenuListProps {
-  items: MenuItem[];
+  items: IMenuItem[];
 }
 
 function MenuList({ items }: MenuListProps) {

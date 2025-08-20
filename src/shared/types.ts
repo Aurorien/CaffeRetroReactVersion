@@ -1,15 +1,18 @@
-export interface MenuItem {
+export interface IMenuItem {
   id: string;
   name: string;
   value: string;
 }
 
-export interface SectionItem {
+export interface ISectionItem {
   id: string;
   variant: string;
   title: string;
+  href: string;
   firstParagraph: string;
   secondParagraph: string;
+  menuItems: IMenuItem[];
+}
 
 export interface ILink {
   title: string;

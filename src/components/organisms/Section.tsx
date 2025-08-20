@@ -1,9 +1,9 @@
-import type { SectionItem } from "../../shared/types";
+import type { ISectionItem } from "../../shared/types";
 import SectionInnerWrapper from "../atoms/SectionInnerWrapper";
 import SectionContent from "../molecules/SectionContent";
 
 interface SectionProps {
-  item: SectionItem;
+  item: ISectionItem;
 }
 
 function Section({ item }: SectionProps) {

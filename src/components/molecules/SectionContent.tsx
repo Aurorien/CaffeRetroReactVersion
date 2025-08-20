@@ -1,4 +1,4 @@
-import type { MenuItem } from "../../shared/types";
+import type { IMenuItem } from "../../shared/types";
 import SectionParagraph from "../atoms/SectionParagraph";
 import MenuList from "./MenuList";
 
@@ -6,7 +6,7 @@ interface SectionContentProps {
   title: string;
   firstParagraph: string;
   secondParagraph: string;
-  menuItems: MenuItem[];
+  menuItems: IMenuItem[];
 }
 
 const SectionContent = ({
