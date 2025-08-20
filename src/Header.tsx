@@ -1,17 +1,20 @@
-function Header() {
+import Link from "./components/atoms/Link";
+import type { ILink } from "./shared/types";
+
+interface HeaderProps {
+  links: ILink[];
+}
+
+function Header({ links }: HeaderProps) {
   return (
     <header>
       <nav>
         <ul className="nav-ul">
-          <li>
-            <a href="#hot">Hot</a>
-          </li>
-          <li>
-            <a href="#juicy">Juicy</a>
-          </li>
-          <li>
-            <a href="#cosy">Cosy</a>
-          </li>
+          {links.map((link) => (
+            <li>
+              <Link link={link} />
+            </li>
+          ))}
         </ul>
       </nav>
     </header>

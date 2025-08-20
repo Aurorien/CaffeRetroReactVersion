@@ -10,5 +10,8 @@ export interface SectionItem {
   title: string;
   firstParagraph: string;
   secondParagraph: string;
-  menuItems: MenuItem[];
+
+export interface ILink {
+  title: string;
+  href: string;
 }
