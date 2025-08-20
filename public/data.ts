@@ -1,10 +1,11 @@
-import type { SectionItem } from "./shared/types";
+import type { ISectionItem } from "../src/shared/types";
 
-export const sectionsData: SectionItem[] = [
+export const sectionsData: ISectionItem[] = [
   {
     id: "hot",
     variant: "hot",
     title: "Hot",
+    href: "#hot",
     firstParagraph:
       "Hot freshly ground black coffee or a cup of exquisite tea?",
     secondParagraph: "We give you that perfect cup every time.",
@@ -35,6 +36,7 @@ export const sectionsData: SectionItem[] = [
     id: "juicy",
     variant: "juicy",
     title: "Juicy",
+    href: "#juicy",
     firstParagraph: "Ripe fruit - freshly squeezed.",
     secondParagraph:
       "It's as simple as that. Chunky or smooth - it's your choice.",
@@ -60,6 +62,7 @@ export const sectionsData: SectionItem[] = [
     id: "cosy",
     variant: "cosy",
     title: "Cosy",
+    href: "#cosy",
     firstParagraph: "Hang around. Enjoy the settings.",
     secondParagraph: "Use our fast WiFi. Borrow a newspaper or a novel.",
     menuItems: [
